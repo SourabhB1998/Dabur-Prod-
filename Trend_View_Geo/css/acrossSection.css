@@ -1,0 +1,295 @@
+.reportTitleBar{
+    text-align: center;
+    background-color: darkgreen;
+    min-height: 45px;
+}
+
+
+.reportTitle{
+    color: white;
+    font-weight: 700;
+}
+
+.reportSubTitle{
+  color: white;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.mainContent{
+    height: 80%;
+    width: 98%;
+}
+
+.filterRow{
+    min-height: 55px;
+    background-color: #d8d9da87;
+    text-align: center;
+    padding: 4px;
+    /* padding-top: 1%; */
+    /* padding-right: 2%; */
+}
+
+.headingbar{
+    padding: 1px;
+    padding-left: 6px;
+    background-color: #d8d9da87;
+    color: #3d84a6 !important;
+}
+
+.heading{
+    color: #3d84a6;
+    font-weight: bold;
+    margin : 6px;
+}
+
+.headingbar>.heading{
+    color: #3d84a6;
+}
+
+.filterCol{
+    border: 1px solid darkgray;
+    background-color: white;
+    margin : 1px;
+
+}
+
+.filterTitle{
+    font-size: 12px;
+}
+
+.row{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+select{
+    font-size: 12px;
+    min-width: 100%;
+    width: 100%;
+    text-align: center;
+    height: 20px;
+}
+
+
+table.areaDataTable,table.nobTable,table.regionDataTable{
+    width: 100%;
+}
+
+table.areaDataTable tr.areaDataTableTr,table.nobTable tr.nobTableTr,
+table.nobTable tr.areaDataTableTr{
+    cursor: pointer;
+}
+
+table.areaDataTable tr.areaDataTableTr:hover,table.nobTable tr.nobTableTr:hover,table.nobTable tr.areaDataTableTr:hover,table.regionDataTable tr.regionDataTableTr:hover {
+    background-color: lightgray;
+}
+
+table.areaDataTable th,table.nobTable th,table.regionDataTable th{
+    width: 7% !important;
+    text-align: center;
+    padding: 2px;
+    font-size: 12px;
+    background: white;
+    position: sticky;
+    top: 0;
+    color: #3d84a6;
+    z-index: 1;
+    /* cursor: default; */
+}
+
+table.areaDataTable td,table.nobTable td,table.regionDataTable td{
+    width: 7% !important;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    vertical-align: middle;
+    padding: 1px 0px 1px 0px !important;
+}
+
+.tableContent{
+    max-height: 60%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 72%;
+    margin-left: 1%;
+    margin-right: 1%;
+    border: 1px solid lightgray;
+}
+
+.tableContent2{
+    max-height: 30.70%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* height: 20%; */
+    margin-left: 1%;
+    margin-right: 1%;
+    border: 1px solid lightgray;
+}
+
+.tableContent1{
+    max-height: 30.70%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* height: 20%; */
+    margin-left: 1%;
+    margin-right: 1%;
+    border: 1px solid lightgray;
+}
+
+.selectedCol {
+    background-color: lightgrey;
+    box-shadow: 2px 0px 4px 1px;
+}
+
+.loader{
+    margin-top : 0 !important;
+}
+
+.loader3 {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    float: right;
+    animation: spin 2s linear infinite;
+}
+
+.noDataTd{
+    text-align: center;
+    color: red;
+}
+
+
+ul.multiselect-container > li > a{
+    color: black;
+    float: none;
+    font-size: 12px;
+
+}
+
+button.multiselect {
+    background: none;
+    font-size: 13px;
+    padding: 0;
+    border: 0.5px solid grey;
+    width: 100%;
+    border-radius: 0;
+}
+
+div.btn-group{
+    width: 100%;
+}
+
+input.multiselect-search{
+    height: 30px;
+}
+
+span.input-group-btn{
+    margin-top: 4%;
+}
+
+.multiselect-container{
+    max-height: 402px !important;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.multiselect-container > li > a >label{
+   padding : 3px 0px 4px 11px
+}
+
+.multiselect-container>li {
+    padding: 0;
+    width: 100%;
+}
+
+.multiselect-container .input-group{
+    width: 145px;
+}
+
+span.multiselect-native-select select{
+    left: 0;
+}
+
+#downloadStatesData,#downloadStatesData{
+    float: right;
+    margin-right: 10px;
+}
+
+.selectedCol {
+    background-color: lightgrey;
+    box-shadow: 2px 0px 4px 1px;
+}
+
+.asc,.desc{
+    font-weight: bold;
+    font-family: FontAwesome,sans-serif;
+    margin-left: 5px;
+}
+
+.desc::after{
+  content: "\f13a";
+  position: absolute;
+  right: 2px;
+}
+
+.asc::after{
+  content: "\f139";
+  position: absolute;
+  right: 2px;
+}
+
+.metricsStateDiv,.metricsNobDiv,.metricsRegionDiv{
+    /* margin: 1%; */
+    /* min-height: 8%; */
+    height: 6%;
+}
+
+.metricsStateDiv > table{
+    width: 99.6%;
+    height: 100%;
+
+}
+
+.metricsNobDiv > table{
+    width: 100%;
+    height: 100%;
+
+}
+
+.metricsValue{
+    width: 7% !important;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 0 !important;
+    vertical-align: middle;
+}
+.metricsValue1{
+    width: 7% !important;
+    text-align: center;
+    font-weight: bold;
+    color: #3d84a6;
+    font-size: 12px;
+    padding: 0 !important;
+    vertical-align: middle;
+}
+
+.metricsRegionDiv > table {
+    width: 99.99%;
+    height: 100%;
+}
+
+#comment-tab,#chatbot-tab {
+    margin-left: -40px;
+}
+
+#chatbot {
+    width: 40px;
+}
+
+#commentsContainer{
+z-index: 1;
+}

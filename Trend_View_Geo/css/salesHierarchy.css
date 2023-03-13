@@ -1,0 +1,220 @@
+select{
+    font-size: 12px;
+    min-width: 100%;
+    width: 100%;
+    text-align: center;
+    height: 20px;
+}
+
+.heading{
+    color: #3d84a6;
+    font-weight: bold;
+    margin : 6px;
+}
+
+.row{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.filterRow{
+    min-height: 55px;
+    background-color: #d8d9da87;
+    text-align: center;
+    padding: 4px;
+    /* padding-top: 1%; */
+    /* padding-right: 2%; */
+}
+
+.tabularDiv{
+    width: 40%;
+    border: 1px solid lightgray;
+    max-height: 100%;
+    overflow-x: hidden;
+    overflow-y:auto
+}
+
+.chartDiv{
+    width: 20%;
+    height: 100%;
+    max-height: 100%;
+    border: 1px solid lightgray;
+}
+
+.tableDiv{
+    /* margin-top: 1%; */
+    margin-bottom: 1%;
+}
+
+.uplift{
+    color: green;
+}
+
+.downlift{
+    color: red;
+}
+
+table{
+    width: 100%;
+}
+
+table th{
+    background-color: #d8d9da87;
+    padding-left: 7px;
+    color: #3d84a6;
+}
+
+table tr.commonHeading{
+    font-size: 15px;
+}
+
+table tr.commonHeading th{
+    width: 33.33%;
+}
+
+table td{
+    text-align: center;
+    font-weight: bolder;
+    width: 33.33%;
+    height: 33px;
+}
+
+.tdData{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.underText{
+    font-size: 8px;
+    color: gray;
+}
+
+.mainContent{
+    min-height: 82%;
+    height: 82%;
+    width: 96%;
+}
+
+.mainContent > .col{
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+#reginalPerfChartContainerId,#skuChartContainerId,#retailerPerfChartContainerId{
+    height: 90%;
+    /* height: fit-content; */
+    min-height: 90%;
+}
+
+
+
+  a{
+      /* font-size: 18px; */
+      float: right;
+      color: #007bff;;
+  }
+
+  .reportTitleBar{
+      text-align: center;
+      background-color: darkgreen;
+      min-height: 45px;
+  }
+
+  .filterTitle{
+      font-size: 12px;
+  }
+
+  .filterCol{
+      border: 1px solid darkgray;
+      background-color: white;
+      margin : 1px;
+
+  }
+
+  .reportTitle{
+      color: white;
+      font-weight: 700;
+  }
+
+  .reportSubTitle{
+    color: white;
+    font-weight: 200;
+    font-size: 12px;
+  }
+
+  .headingbar{
+      padding: 1px;
+      background-color: #d8d9da87;
+      color: #3d84a6 !important;
+  }
+
+  .headingbar > .heading{
+    color: #3d84a6 !important;
+}
+
+ul.multiselect-container > li > a{
+    color: black;
+    float: none;
+    font-size: 12px;
+
+}
+
+button.multiselect {
+    background: none;
+    font-size: 13px;
+    padding: 0;
+    border: 0.5px solid grey;
+    width: 100%;
+    border-radius: 0;
+}
+
+div.btn-group{
+    width: 100%;
+}
+
+input.multiselect-search{
+    height: 30px;
+}
+
+span.input-group-btn{
+    margin-top: 4%;
+}
+
+.multiselect-container{
+    max-height: 402px !important;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.multiselect-container > li > a >label{
+   padding : 3px 0px 4px 11px
+}
+
+.multiselect-container>li {
+    padding: 0;
+    width: 100%;
+}
+
+.multiselect-container .input-group{
+    width: 145px;
+}
+
+.highlight{
+    color: red !important;
+    fill: red !important;
+    font-weight: bolder !important;
+}
+
+.customLegend{
+    font-size: 10px;
+    padding-left: 5px;
+    text-align: right;
+}
+
+#comment-tab,#chatbot-tab {
+    margin-left: -40px;
+}
+
+#chatbot {
+    width: 40px;
+}

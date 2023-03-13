@@ -1,0 +1,269 @@
+.reportTitleBar{
+    text-align: center;
+    background-color: darkgreen;
+    min-height: 45px;
+}
+
+
+.reportTitle{
+    color: white;
+    font-weight: 700;
+}
+
+.reportSubTitle{
+  color: white;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.mainContent{
+    height: 70%;
+    width: 98%
+}
+
+.filterRow{
+    min-height: 55px;
+    background-color: #d8d9da87;
+    text-align: center;
+    padding: 4px;
+    /* padding-top: 1%; */
+    /* padding-right: 2%; */
+}
+
+.headingbar{
+    padding: 1px;
+    padding-left: 6px;
+    background-color: #d8d9da87;
+    color: #3d84a6 !important;
+}
+
+.heading{
+    color: #3d84a6;
+    font-weight: bold;
+    margin : 6px;
+}
+
+.headingbar>.heading{
+    color: #3d84a6;
+}
+
+.filterCol{
+    border: 1px solid darkgray;
+    background-color: white;
+    margin : 1px;
+
+}
+
+.filterTitle{
+    font-size: 12px;
+}
+
+.row{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+select{
+    font-size: 12px;
+    min-width: 100%;
+    width: 100%;
+    text-align: center;
+    height: 20px;
+}
+
+.metricsDiv{
+    /* margin: 1%; */
+    /* min-height: 8%; */
+    height: 6%;
+}
+
+.metricsDiv > table{
+    width: 100%;
+    height: 100%;
+
+}
+
+table.schemewiseTable,table.metricsTable{
+    width: 100%;
+}
+
+table.schemewiseTable tr.schemewiseMetricsTr{
+    cursor: pointer;
+}
+
+table.schemewiseTable tr.schemewiseMetricsTr:hover{
+    background-color: lightgray;
+}
+
+table.schemewiseTable th,table.metricsTable th{
+    width: 8.33% !important;
+    text-align: center;
+    padding: 2px;
+    font-size: 12px;
+    background: white;
+    position: sticky;
+    top: 0;
+}
+
+table.schemewiseTable td,table.metricsTable td{
+    width: 8.33% !important;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    vertical-align: middle;
+    padding: 1px 0px 1px 0px !important;
+}
+
+table.metricsTable td.headingbar{
+    font-size: unset;
+    font-weight: bold;
+    margin: 6px;
+    padding-left: 12px;
+    text-align: left;
+
+}
+
+table.metricsTable td:nth-last-child(1){
+    border-left: none;
+}
+
+table.metricsTable td:nth-last-child(2){
+    border-right: none;
+}
+
+.metricsValue{
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.tableContent{
+    max-height: 40%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 40%;
+    margin-left: 1%;
+    margin-right: 1%;
+    border: 1px solid lightgray;
+}
+
+.chartContent{
+    height: 69%;
+    max-height: 69%;
+    /* margin-top: 5px; */
+}
+
+#pieChartDivId,#slabwiseDivId,#billwiseDivId{
+    height: 90%;
+}
+
+.chartContent> * {
+    height: 100%;
+}
+
+/* .chartCol{
+
+} */
+
+.chartCol.billwiseChart{
+    width: 60%;
+    height: 100%;
+    border: 1px solid lightgray;
+}
+
+.chartCol.otherChart{
+    width: 20%;
+    height: 100%;
+    border: 1px solid lightgray;
+}
+
+.selectedCol {
+    background-color: lightgrey;
+    box-shadow: 2px 0px 4px 1px;
+}
+
+.loader{
+    margin-top : 0 !important;
+}
+
+#billwiseDivId .noData{
+    margin-top: 16% !important;
+}
+
+.fa-download{
+    cursor: pointer;
+}
+
+
+ul.multiselect-container > li > a{
+    color: black;
+    float: none;
+    font-size: 12px;
+
+}
+
+button.multiselect {
+    background: none;
+    font-size: 13px;
+    padding: 0;
+    border: 0.5px solid grey;
+    width: 100%;
+    border-radius: 0;
+}
+
+div.btn-group{
+    width: 100%;
+}
+
+input.multiselect-search{
+    height: 30px;
+}
+
+span.input-group-btn{
+    margin-top: 4%;
+}
+
+.multiselect-container{
+    max-height: 402px !important;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.multiselect-container > li > a >label{
+   padding : 3px 0px 4px 11px
+}
+
+.multiselect-container>li {
+    padding: 0;
+    width: 100%;
+}
+
+.multiselect-container .input-group{
+    width: 145px;
+}
+
+.asc,.desc{
+    font-weight: bold;
+    font-family: FontAwesome,sans-serif;
+    margin-left: 5px;
+}
+
+.desc::after{
+  content: "\f13a";
+  position: absolute;
+  right: 2px;
+}
+
+.asc::after{
+  content: "\f139";
+  position: absolute;
+  right: 2px;
+}
+#comment-tab,#chatbot-tab {
+    margin-left: -40px;
+}
+
+#chatbot {
+    width: 40px;
+}
+

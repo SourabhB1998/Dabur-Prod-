@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Trend View Hierarchy</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/tagStyle.css" type="text/css">
+    <link rel="stylesheet" href="./css/snackbar.css" type="text/css">
+    <link rel="stylesheet" href="./css/jquery.mentionsInput.css" type="text/css">
+
+
+    <link href="./css/font-awesome.min.css" rel="stylesheet" />
+    <link href="./css/bootstrap-multiselect.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/bulletcharts.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/trend_view.css" />
+    <link rel="stylesheet" href="./css/buttonStyles.css">
+
+
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/underscore-min.js"></script>
+    <script src="./js/es6-promise.js"></script>
+    <script src="./js/mentionsInput.js"></script>
+    <script src="./js/jquery.elastic.js"></script>
+    <script src="./js/jquery.events.input.js"></script>
+    <script src="./js/jquery.toaster.js"></script>
+    <script src="./js/poper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/multi-select.js"></script>
+    <script src="./js/highcharts.js"></script>
+    <script src="./js/highstock.js"></script>
+    <script src="./js/exporting.js"></script>
+    <script src="./js/export-data.js"></script>
+    <script src='./js/httpintercptor.js'></script>
+    <script src="./js/dashboardDetails.js"></script>
+    <script src='./js/common.js'></script>
+    <script src="./js/bulletchart.js"></script>
+    <script src="./js/chart-bot.js"></script>
+    <script src="./js/mentionsInput.js"></script>
+    <script src="./js/chatbot.js" type='text/javascript'></script>
+    <script src="./js/moment.js"></script>
+    <script src="./js/jsonToCsv.js"></script>
+    <script src='./js/highchart-digilytics.js'></script>
+    <script src="./js/trend_view.js"></script>
+    <script src='./js/crypto.js'></script>
+    <script src="./js/tableShareData.js"></script>
+    <style>
+        .highcharts-axis-title {
+            font-size: 10.5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row reportTitleRow">
+        <div class="col-sm-12 reportTitleBar">
+            <div class="lastRefreshedDateTitle"
+                style="    float: left;color: azure;font-size: 13px;margin-right: -20vw;">Last Refreshed( Bill Date) -
+                <span id="lastRefreshedDateId"></span>
+            </div>
+            <div id="reportId">Strategic Overview : Trend View</div>
+            <div class="lastRefreshedDateTitle"
+                style="    float: left;color: azure;font-size: 13px;margin-right: -20vw;">Source: Daily Sales</div>
+            <div class="reportSubTitle">GEO Hierarchy</div>
+            <div class="reportImg">
+                <img src="./images/daburlogo.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="row filterRow">
+        <div>
+            <span class="heading">Filters</span>
+        </div>
+
+        <div class="col filterCol">
+            <div class="filterTitle">Finacial Year</div>
+            <select name="year" id="yearFilter" class="filter">
+            </select>
+        </div>
+        <div class="col filterCol">
+            <div class="filterTitle">Month</div>
+            <select name="month" id="monthFilter" class="filter">
+                <!-- <option value="">All</option> -->
+            </select>
+        </div>
+        <div class="col filterCol">
+            <div class="filterTitle">Region</div>
+            <select name="zone" class="filter" id="zoneFilter" multiple="multiple">
+                <!-- <option value="">All</option> -->
+            </select>
+        </div>
+        <div class="col filterCol">
+            <div class="filterTitle">State</div>
+            <select name="statename" class="filter" id="stateFilter" multiple="multiple">
+                <!-- <option value="">All</option> -->
+            </select>
+        </div>
+        <div class="col filterCol">
+            <div class="filterTitle">Brand</div>
+            <select name="brand" class="filter" id="brandFilter">
+                <!-- <option value="">All</option> -->
+            </select>
+        </div>
+        <div class="col filterCol">
+            <div class="filterTitle">SKU</div>
+            <select name="sku" class="filter" id="skuFilter" multiple="multiple">
+                <!-- <option value="">All</option> -->
+            </select>
+        </div>
+        <div class="col filterCol" style="    min-width: 140px;">
+            <div class="filterTitle">Nature Of Business</div>
+            <select name="nature_of_business" class="filter" id="businessNatureFilter" multiple="multiple">
+                <!-- <option value="">All</option> -->
+            </select>
+        </div>
+        <div class="col filterCol">
+            <div class="filterTitle">Type of outlet</div>
+            <select name="type_of_outlet" class="filter" id="typeOfOutletFilter" multiple="multiple">
+                <!-- <option value="">All</option> -->
+            </select>
+        </div>
+        <div class="col filterCol">
+            <div class="filterTitle">Stockist Type</div>
+            <select name="stockisttype" class="filter" id="stockistTypeFilter" multiple="multiple">
+                <!-- <option value="">All</option> -->
+            </select>
+        </div>
+        <!-- <div class="col filterCol">
+        <div class="filterTitle">Claimable</div>
+        <select name="claimable" class="filter" id="claiNonClaimFilter">
+        </select>
+    </div> -->
+
+        <div style="display: none;">
+            <select id="stateDependantComboId"></select>
+        </div>
+        <div style="display: none;">
+            <select id="monthDependantComboId"></select>
+        </div>
+        <div style="display: none;">
+            <select id="skuDependantComboId"></select>
+        </div>
+    </div>
+    <div id="goButton" style="float: right;margin-left: -35px;">
+        <button type="button" style="margin-right: 1vw;margin-top: -2px;
+height: 33px;" id="filterChange" class="btn btn-success">Go</button>
+    </div>
+    <div style="margin-right:6vw;"><a style=" color:blue; float: right;"> <i class="fa fa-eraser">Reset</i></a></div>
+    <div style="margin-top: 8px;">
+        <span class="heading1">Key Metrics(YTD)</span>
+        <div class="dropdown">
+            <a class="dropbtn">...</a>
+            <div class="dropdown-content">
+                <a onclick='createCommentDataCalling()' style="font-size: smaller; color: black;">Create Comment</a>
+                <a onclick="sharedDataKeyMetricsCalling()" id="repSalVale"
+                    style="font-size: smaller;color: black;">Share Data</a>
+            </div>
+        </div>
+        <span class="heading2">Performance Over Time</span>
+    </div>
+    <div class="row mainContent">
+        <div id="sideNavDive">
+            <div class="tableDiv">
+                <table border="1" id="totalSalesTableId">
+                    <tr>
+                        <th colspan="3">Total Sales(PTS)</th>
+                    </tr>
+                </table>
+            </div>
+            <!-- 1 -->
+            <div class="tableDiv">
+                <table border="1" id="totalSpendTableId">
+                    <tr>
+                        <th colspan="3">Total Spend</th>
+                    </tr>
+                </table>
+            </div>
+            <!-- 2 -->
+            <div class="tableDiv">
+                <table border="1" id="SpendSalesTableId">
+                    <tr>
+                        <th colspan="3">Spend/Sales(%)</th>
+                    </tr>
+                </table>
+            </div>
+            <!-- 3 -->
+            <div class="tableDiv">
+                <table border="1" id="totalEcoTableId">
+                    <tr>
+                        <th colspan="3">ECO</th>
+                    </tr>
+                </table>
+            </div>
+            <!-- 4 -->
+            <div class="tableDiv">
+                <table border="1" id="totalBillsTableId">
+                    <tr>
+                        <th colspan="3">#Bills</th>
+                    </tr>
+                </table>
+            </div>
+            <!-- 5 -->
+            <div class="tableDiv">
+                <table border="1" id="avgSalesTableId">
+                    <tr>
+                        <th colspan="3">Avg Sales/Bills(PTR)</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="mainContentChart" id="sideNavDiveRight">
+            <div id="containerSales" title=""></div>
+            <div id="containerSpends" title=""></div>
+            <div id="containerAvg" title=""></div>
+            <div id="containerEco" title=""></div>
+            <div id="containerBills" title=""></div>
+            <div id="containerSalesAmount" title=""></div>
+        </div>
+    </div>
+</body>
+
+
+</html>

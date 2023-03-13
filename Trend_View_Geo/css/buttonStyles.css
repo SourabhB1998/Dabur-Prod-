@@ -1,0 +1,37 @@
+
+.dropdown {
+    position: relative;
+    display: inline-grid;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgray;
+    min-width: 110px;
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
+    font-size: small;
+    z-index: 10;
+    margin-left: -100px;
+    /* margin-top: 5px; */
+}
+
+.dropdown-content a:hover {
+    background-color: inherit;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: inherit;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 6px 40px;
+    text-decoration: none;
+    display: block;
+}
+    

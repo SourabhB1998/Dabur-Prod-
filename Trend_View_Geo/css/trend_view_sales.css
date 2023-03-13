@@ -1,0 +1,319 @@
+select{
+    font-size: 12px;
+    min-width: 100%;
+    width: 100%;
+    text-align: center;
+    height: 20px;
+}
+
+.heading{
+    color: #dea400;;
+    font-weight: bold;
+    margin : 6px;
+}
+
+.row{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.filterRow{
+    min-height: 55px;
+    background-color: #d8d9da87;
+    text-align: center;
+    padding: 4px;
+    /* padding-top: 1%; */
+    /* padding-right: 2%; */
+}
+
+
+.chartDiv{
+    width: 20%;
+    border: 1px solid lightgray;
+}
+
+.uplift{
+    color: green;
+}
+
+.downlift{
+    color: red;
+}
+
+table{
+    width: 90%;
+    margin-bottom: 3px;
+}
+.tableDiv{
+    height: 72px;
+}
+table th{
+    background-color: #d8d9da87;
+    padding-left: 7px;
+    padding-top: 8px;
+    /* color: #696c6d61; */
+    /* font-size: 13px; */
+    text-align: center;
+    color: #3d84a6;
+}
+
+table tr.commonHeading{
+    font-size: 15px;
+}
+
+table tr.commonHeading th{
+    width: 33.33%;
+}
+
+table td{
+    text-align: center;
+    font-weight: 500;
+    width: 33.33%;
+    height: 40px;
+    padding-top: 9px;
+}
+
+.tdData{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.underText{
+    font-size: 8px;
+    color: gray;
+}
+
+.mainContent > .col{
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+#reginalPerfChartContainerId,#skuChartContainerId,#retailerPerfChartContainerId{
+    height: 90%;
+    min-height: 90%;
+}
+
+
+
+  a{
+      font-size: 18px;
+      float: right;
+      color: #007bff;;
+  }
+
+  .reportTitleBar{
+      text-align: center;
+      background-color: darkgreen;
+      min-height: 45px;
+  }
+
+  .filterTitle{
+      font-size: 12px;
+  }
+
+  .filterCol{
+      border: 1px solid darkgray;
+      background-color: white;
+      margin : 1px;
+
+  }
+
+  .reportTitle{
+      color: white;
+      font-weight: 700;
+  }
+
+  .reportSubTitle{
+    color: white;
+    font-weight: 200;
+    font-size: 15px;
+    margin-top: 3px;
+  }
+
+  .headingbar{
+      padding: 1px;
+      background-color: #d8d9da87;
+      color: #3d84a6 !important;
+  }
+
+  .headingbar > .heading{
+    color: #3d84a6 !important;
+}
+
+ul.multiselect-container > li > a{
+    color: black;
+    float: none;
+
+}
+
+button.multiselect {
+    background: none;
+    font-size: 13px;
+    padding: 0;
+    border: 0.5px solid grey;
+    width: 100%;
+    border-radius: 0;
+}
+
+div.btn-group{
+    width: 100%;
+}
+
+input.multiselect-search{
+    height: 30px;
+}
+
+span.input-group-btn{
+    margin-top: 4%;
+}
+
+.multiselect-container > li > a >label{
+   padding : 3px 0px 4px 11px
+}
+
+.multiselect-container>li {
+    padding: 0;
+    width: 150px;
+}
+
+.highlight{
+    color: red !important;
+    fill: red !important;
+    font-weight: bolder !important;
+}
+
+ul.multiselect-container > li > a{
+    color: black;
+    float: none;
+    font-size: 12px;
+
+}
+
+button.multiselect {
+    background: none;
+    font-size: 13px;
+    padding: 0;
+    border: 0.5px solid grey;
+    width: 100%;
+    border-radius: 0;
+}
+
+div.btn-group{
+    width: 100%;
+}
+
+input.multiselect-search{
+    height: 30px;
+}
+
+span.input-group-btn{
+    margin-top: 4%;
+}
+
+.multiselect-container{
+    max-height: 402px !important;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.multiselect-container > li > a >label{
+   padding : 3px 0px 4px 11px
+}
+
+.multiselect-container>li {
+    padding: 0;
+    width: 100%;
+}
+
+.multiselect-container .input-group{
+    width: 145px;
+}
+
+#containerSales,#containerSpends,
+#containerAvg,#containerEco,
+#containerBills,#containerSalesAmount {
+    max-height: 73px;
+    height: 73px;
+    width: 100%;
+    margin-top: 1px;
+}
+
+.highcharts-data-table table {
+	font-family: Verdana, sans-serif;
+	border-collapse: collapse;
+	border: 1px solid #EBEBEB;
+	margin: 10px auto;
+	text-align: center;
+	width: 100%;
+	max-width: 500px;
+}
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+.highcharts-data-table th {
+	font-weight: 600;
+    padding: 0.5em;
+}
+.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+    padding: 0.5em;
+}
+.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+
+#sideNavDive{
+  min-width: 12%;
+  width: 12%;
+  height: 100%;
+  margin-top: 1px;
+}
+.headerContent{
+  color: dea400;
+  font-size: 19px;
+  margin-top: 5px;
+}
+.heading1{
+    color: #dea400;
+    font-weight: bold;
+    margin-left: 1.5%;
+    font-size: 16px;
+}
+.heading2{
+    color: #dea400;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 2.2%;
+}
+#sideNavDiveRight{
+    height: 100%;
+    min-height: 100%;
+    min-width: 86%;
+    width: 86%;
+}
+.loader{
+    margin-top : 0 !important;
+}
+#metricsLoderId{
+    height: 20px;
+    width: 20px;
+}
+.noData{
+    margin-top: 2% !important;
+}
+
+table tbody tr{
+    height: 34px;
+}
+
+#comment-tab,#chatbot-tab {
+    margin-left: -40px;
+}
+
+#chatbot {
+    width: 40px;
+}
